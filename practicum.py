@@ -1,7 +1,7 @@
-def add(x, y):
-    return x + y
+def add(var1, var2):
+    return var1 + var2
 
 
-x = 10
-y = 5
-print("Сумма чисел: ", add(x, y))
+var1 = 10
+var2 = 5
+print('Сумма чисел: ', add(var1, var2))
