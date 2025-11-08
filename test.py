@@ -14,8 +14,10 @@ def calc(your_number):
     if your_number <= 0:
         return
 
-    return f"Мы вычислили квадратный корень из введённого вами числа. \
-        Это будет: {calculate_square_root(your_number)}"
+    return (
+        'Мы вычислили квадратный корень из введённого вами числа.'
+        f'Это будет: {calculate_square_root(your_number)}'
+    )
 
 
 var1 = 10
