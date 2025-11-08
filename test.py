@@ -1,27 +1,29 @@
 from math import sqrt
-from typing import Union
+from typing import Optional, Union
 
 
-def add_numbers(var1: Union[int, float], var2: Union[int, float]):
+def add_numbers(var1: Union[int, float],
+                var2: Union[int, float]) -> Union[int, float]:
     return var1 + var2
 
 
-def calculate_square_root(Number: Union[int, float]):
-    return sqrt(Number)
+def calculate_square_root(number: Union[int, float]) -> float:
+    return sqrt(number)
 
 
-def calc(your_number):
+def calc(your_number: Union[int, float]) -> Optional[str]:
     if your_number <= 0:
-        return
+        return None
     res = calculate_square_root(your_number)
     return (
-        f'Мы вычислили квадратный корень из введённого вами числа.Это будет: {res}'
+        'Мы вычислили квадратный корень из введённого вами числа. Это будет:'
+        f' {res}'
     )
 
 
 var1 = 10
 var2 = 5
 
-print("Сумма чисел: ", add_numbers(var1, var2))
+print('Сумма чисел: ', add_numbers(var1, var2))
 
 print(calc(25.5))
