@@ -13,10 +13,9 @@ def calculate_square_root(Number: Union[int, float]):
 def calc(your_number):
     if your_number <= 0:
         return
-
+    res = calculate_square_root(your_number)
     return (
-        'Мы вычислили квадратный корень из введённого вами числа.'
-        f'Это будет: {calculate_square_root(your_number)}'
+        f'Мы вычислили квадратный корень из введённого вами числа.Это будет: {res}'
     )
 
 
