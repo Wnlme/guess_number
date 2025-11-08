@@ -6,7 +6,7 @@ def add_numbers(var1: Union[int, float], var2: Union[int, float]):
     return var1 + var2
 
 
-def CalculateSquareRoot(Number: Union[int, float]):
+def calculate_square_root(Number: Union[int, float]):
     return sqrt(Number)
 
 
@@ -15,7 +15,7 @@ def calc(your_number):
         return
 
     return f"Мы вычислили квадратный корень из введённого вами числа. \
-        Это будет: {CalculateSquareRoot(your_number)}"
+        Это будет: {calculate_square_root(your_number)}"
 
 
 var1 = 10
