@@ -1,12 +1,12 @@
-def add_numbers(x, y):
-    return x + y
+from math import sqrt
+from typing import Union
 
 
-from math import *
-import itertools
+def add_numbers(var1: Union[int, float], var2: Union[int, float]):
+    return var1 + var2
 
 
-def CalculateSquareRoot(Number):
+def CalculateSquareRoot(Number: Union[int, float]):
     return sqrt(Number)
 
 
@@ -14,13 +14,12 @@ def calc(your_number):
     if your_number <= 0:
         return
 
-    root = 0
     return f"Мы вычислили квадратный корень из введённого вами числа. Это будет: {CalculateSquareRoot(your_number)}"
 
 
-x = 10
-y = 5
+var1 = 10
+var2 = 5
 
-print("Сумма чисел: ", add_numbers(x, y))
+print("Сумма чисел: ", add_numbers(var1, var2))
 
 print(calc(25.5))
